@@ -1,47 +1,81 @@
-# Problem statement
-<h3> 
-  There are a lot of aspiring developers who aspire to get a remote job, and get the perks of sitting in your home, wearking pajamas and make a living out of it(yes, that's how lazy some of us programmers are)
-</h3>
-<h3>
-  But asides from aspiration, one needs to learn how to present themselves in front of the ideal employer who can see that you are useful to them. But it's not an easy journey to build your skills in the technology you are learning, it sometimes take months to actually build something people like!!
-</h3>
-<h3>
-  But there is a con to just working hard on your skills!! You might be the best python developer in your country that could potentially do the job of 10 engineers! But in reality you are in your dorm room, just cramming for the next exam and writing assignments. It's frustrating to know you are good while not getting the benefits of it.
-</h3>
-<h2>
-  But every problem has a solution at the end of the day, but before hearing the solutions, let's understand where we wanna look at to solve it?
-   <ol>
-     <li>Social media presence is essential for the growth of a developer's career because it not only exposes you to new people, but also present you with the oppertunities that you might not even have thought of</li>
-     <li>Writing the right message to a potential employer(founder, HR etc.), presenting yourself as a problem solver and product oriented dev, and also knowing their needs can highly increase the chance of getting a reply back and schedule an interview</li>
-     <li>Writing engaging content + uploading content in a huge volume is a big factor in improving your social media presence</li>
-   </ol>
-</h2>
-<b/>
-<h3>
-  But it sounds so much of a pain to be doing all this daily, apart from the hustle of your main craft! It includes:
-  <ol>
-    <li>
-      Post 5-7 posts in linked and X
-    </li>
-    <li>
-      Maintain post quality and content consistently
-    </li>
-    <li>
-      Craft the right message to send to the potential employer, making it personalized, and also showing genuine interest in the project that you will be working on
-    </li>
-  </ol>
-</h3>
-<h3>
-  Sounds like a long day of work already right? So here's what we can help you do:-
-  <ol>
-    <li>
-      Automate posting of at-least 5 content everyday, maintaining consistency
-    </li>
-    <li>
-      Created crafted content just based on simple 5 questions about the content, abstracting away all the research about the most engaging content
-    </li>
-    <li>
-      Help you create personalized messages for the potential employee
-    </li>
-  </ol>
-</h3>
+# Turborepo starter
+
+This is an official starter Turborepo.
+
+## Using this example
+
+Run the following command:
+
+```sh
+npx create-turbo@latest
+```
+
+## What's inside?
+
+This Turborepo includes the following packages/apps:
+
+### Apps and Packages
+
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Utilities
+
+This Turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm build
+```
+
+### Develop
+
+To develop all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm dev
+```
+
+### Remote Caching
+
+Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+
+```
+cd my-turborepo
+npx turbo login
+```
+
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+
+```
+npx turbo link
+```
+
+## Useful Links
+
+Learn more about the power of Turborepo:
+
+- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
